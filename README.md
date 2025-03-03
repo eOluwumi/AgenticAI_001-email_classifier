@@ -1,10 +1,10 @@
-AgenticAI 001 - Email Classification & Response
+#AgenticAI 001 - Email Classification & Response
 
-Overview
+##Overview
 
 AgenticAI 001 is a multi-agent system designed to classify emails and generate appropriate responses. It leverages the CrewAI framework to coordinate agents that perform distinct tasks—classification and response generation. This is just the beginning of the AgenticAI revolution.
 
-Features
+###Features
 
 Automated Email Classification: Categorizes emails as important, casual, or spam.
 
@@ -14,7 +14,7 @@ Modular Agent-Based Architecture: Utilizes CrewAI agents for task delegation and
 
 Sequential Processing: Ensures classification occurs before response generation.
 
-Technologies Used
+###Technologies Used
 
 Python
 
@@ -26,7 +26,7 @@ OpenAI API (via Groq)
 
 Environment Variables for Configurations
 
-Installation
+###Installation
 
 Clone the repository:
 

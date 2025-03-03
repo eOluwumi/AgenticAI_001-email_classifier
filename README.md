@@ -1,67 +1,55 @@
-#AgenticAI 001 - Email Classification & Response
+**AgenticAI 001 - Email Classification & Response**
 
-##Overview
+_**Overview**_
 
-AgenticAI 001 is a multi-agent system designed to classify emails and generate appropriate responses. It leverages the CrewAI framework to coordinate agents that perform distinct tasks—classification and response generation. This is just the beginning of the AgenticAI revolution.
+_AgenticAI 001 is a multi-agent system designed to classify emails and generate appropriate responses. It leverages the CrewAI framework to coordinate agents that perform distinct tasks—classification and response generation. This is just the beginning of the AgenticAI revolution._
 
-###Features
+_**Features**___
 
-Automated Email Classification: Categorizes emails as important, casual, or spam.
+- _Automated Email Classification: Categorizes emails as important, casual, or spam._
 
-Contextual Email Responses: Generates concise and appropriate responses based on classification.
+- _Contextual Email Responses: Generates concise and appropriate responses based on classification._
 
-Modular Agent-Based Architecture: Utilizes CrewAI agents for task delegation and execution.
+- _Modular Agent-Based Architecture: Utilizes CrewAI agents for task delegation and execution._
 
-Sequential Processing: Ensures classification occurs before response generation.
+- _Sequential Processing: Ensures classification occurs before response generation._
 
-###Technologies Used
+_**Technologies Used**_
 
-Python
+_- Python_
+_- CrewAI_
+_- Groq LLaMA3 8B_
+_- OpenAI API (via Groq)_
+- _Environment Variables for Configurations_
 
-CrewAI
+**_Installation_**
 
-Groq LLaMA3 8B
+- _Clone the repository:_
+-- git clone https://github.com/your-repo/agenticai_001.git
+-- cd agenticai_001
 
-OpenAI API (via Groq)
+- _Create a virtual environment and activate it:_
+-- python -m venv .venv
+-- On Windows use .venv\Scripts\activate
 
-Environment Variables for Configurations
+- _Install dependencies:_
+-- pip install -r requirements.txt
 
-###Installation
+- _Set environment variables:_
+-- Create a .env file and add:
+-- LITELLM_PROVIDER=groq
+-- OPEN_API_BASE=https://api.groq.com/openai/v1
+-- OPENAI_MODEL_NAME=groq/llama3-8b-8192
+-- GROQ_API_KEY=your_api_key_here
 
-Clone the repository:
+- _Run the script:_
+--python omain.py
 
-git clone https://github.com/your-repo/agenticai_001.git
-cd agenticai_001
+- _Usage_
+-- The script processes an email and classifies it.
+-- Based on classification, it generates an appropriate response.
 
-Create a virtual environment and activate it:
-
-python -m venv .venv
-source .venv/bin/activate  # On Windows use .venv\Scripts\activate
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-Set environment variables:
-
-Create a .env file and add:
-
-LITELLM_PROVIDER=groq
-OPEN_API_BASE=https://api.groq.com/openai/v1
-OPENAI_MODEL_NAME=groq/llama3-8b-8192
-GROQ_API_KEY=your_api_key_here
-
-Run the script:
-
-python main.py
-
-Usage
-
-The script processes an email and classifies it.
-
-Based on classification, it generates an appropriate response.
-
-Example output:
+**_Example output:_**
 
 # Agent: Email Classifier
 ## Final Answer: spam
@@ -71,23 +59,16 @@ Example output:
 Dear Nigerian Prince,
 Thank you for your email. Unfortunately, I'm not interested in your offer of gold. Please don't contact me again.
 
-Next Steps
+-**Next Steps**
+- Enhance classification accuracy with fine-tuned models.
+- Integrate document-based Q&A for customer support.
+- Deploy as an API using FastAPI.
+- Implement logging & monitoring for better insights.
 
-Enhance classification accuracy with fine-tuned models.
+**Contributing**
+--Contributions are welcome! Feel free to fork this repo and create pull requests.
 
-Integrate document-based Q&A for customer support.
-
-Deploy as an API using FastAPI.
-
-Implement logging & monitoring for better insights.
-
-Contributing
-
-Contributions are welcome! Feel free to fork this repo and create pull requests.
-
-License
-
-MIT License
+**License**
+-- NIL
 
 🚀 This is just the beginning of the AgenticAI revolution! Stay tuned for more advancements. 🚀
-
